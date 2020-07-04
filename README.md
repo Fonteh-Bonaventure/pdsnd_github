@@ -1,5 +1,5 @@
 ### Date created: 22/06/2020
-Include the date you created this project and README file.
+
 
 ### Project Title
 Explore US Bikeshare Data Project
@@ -13,4 +13,4 @@ chicago.csv, containing the data for chicago,
 washington.csv, containing data for Washington,
 new_york_city.csv, containing data for washington
 ### Credits
-All thanks to the Juno for her lectures at Udacity
+All thanks to Juno for her lectures at Udacity
