@@ -219,7 +219,7 @@ def user_stats(df, city):
     print('-'*60)
 
     # TO DO: Display counts of gender
-    
+    #Checking city to know whether or not to display gender stats 
     if city in ['Washington', 'washington'] :
        print("Gender stats")
        print("There is no gender data for ", city) 
