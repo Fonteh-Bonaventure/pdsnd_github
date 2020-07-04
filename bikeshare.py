@@ -4,9 +4,7 @@ import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv', 'Chicago': 'chicago.csv',
-              'New York City': 'new_york_city.csv',
-              'Washington': 'washington.csv' }
+              'washington': 'washington.csv'}
 
 def get_filters():
     """
@@ -23,15 +21,18 @@ def get_filters():
     cities = ['Chicago', 'chicago', 'New York City','new york city', 'Washington','washington']
     months = ['All', 'all', 'January', 'january', 'February', 'february', 'March', 'march', 'April', 'april', 'May', 'may', 'June', 'june']
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday','Friday', 'Saturday', 'Sunday','All', 'all', 'monday', 'tuesday', 'wednesday', 'thursday','friday', 'saturday', 'sunday']
+    #The while loop checks whether the city entered is found in the CITY_DATA dictionary and tell the user to renter the city if not found
     while city not in cities :
         city = input("You entered the wrong city! please enter either Chicago, New York City or Washington to get stats for: \n")
     # TO DO: get user input for month (all, january, february, ... , june)
 
     month = input("Enter the month you wish to obtain stats or all if you wants stats for all months: \n")
+    #The while loop checks whether the month entered is found in the months list and tell the user to renter the month if not found
     while month not in months :
         month = input("You entered the wrong month! Please enter either January, February, March, April, May, June or all to get stats for all months: \n")
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input("Enter the day you wish to obtain stats or all if you wants stats for all days: \n")
+    #The while loop checks whether the day entered is found in the days list and tell the user to renter the day if not found
     while day not in days :
         day = input("You entered the wrong day! Please enter either Monday, Tuesday,Wednesday,Thurday,Friday, Saturday, Sunday or all to get stats for all days: \n")
     print('-'*120)
