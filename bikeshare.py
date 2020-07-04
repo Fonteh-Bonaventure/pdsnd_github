@@ -90,6 +90,7 @@ def time_stats(df):
     # find the most popular month
     popular_month = df['month'].mode()[0]
     print('\nCommon month of travel...')
+    #Printing months in letters
     if popular_month ==1 :
         pop_month = 'January'
         print('Most common month of travel:', pop_month)
